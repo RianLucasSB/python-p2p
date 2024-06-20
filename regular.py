@@ -15,7 +15,7 @@ ENDERECO_COMPLETO = f"http://192.168.100.5:{PORTA}"
 logging.basicConfig(level=logging.INFO)
 
 # Servidor do próprio nó
-server_regular = xmlrpc.server.SimpleXMLRPCServer(('localhost', PORTA), allow_none=True, logRequests=False)
+server_regular = xmlrpc.server.SimpleXMLRPCServer(('0.0.0.0', PORTA), allow_none=True, logRequests=False)
 
 # Conexão com o nó borda
 server = xmlrpc.client.ServerProxy(f"http://3.80.212.41")

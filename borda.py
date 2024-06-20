@@ -14,7 +14,7 @@ lista_de_clientes = []
 lista_de_arquivos = []
 
 # Servidor do próprio nó
-server_borda = xmlrpc.server.SimpleXMLRPCServer(('3.80.212.41', 8000), allow_none=True)
+server_borda = xmlrpc.server.SimpleXMLRPCServer(('0.0.0.0', 8000), allow_none=True)
 
 def envia_localizacao_arquivo(nome_arquivo):
     lista_de_nos = []
